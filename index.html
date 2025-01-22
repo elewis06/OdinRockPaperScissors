@@ -3,11 +3,59 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" value="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/index.css">
         <title>Rock Paper Scissors</title>
     </head>
     <body>
-        <h1>Rock Paper Scissors</h1>
+        <div class="game-container">
+            <div class="header-container">
+                <h1>ROCK, PAPER, SCISSORS!</h1>
+            </div>
+            <div class="game-body-container">
+                <div class="user-options-container options-container">
+                    <h2 class="options-title">You</h2>
+                    <div class="options-buttons-container">
+                        <input type="image" src="./images/rock.png" name="userRockButton" class="options-button user-option rock-button" id="userRockButton" />
+                        <input type="image" src="./images/paper.png" name="userPaperButton" class="options-button user-option paper-button" id="userPaperButton" />
+                        <input type="image" src="./images/scissors.png" name="userScissorsButton" class="options-button user-option scissors-button" id="userScissorsButton" />
+                    </div>
+                </div>
+                <div class="console-container">
+                    <div class="console-item round-result-message-container">
+                        <div class="welcome-message">Welcome to a game of rock, paper, scissors! Make your selection!</div>
+                        <div class="user-selection-message"></div>
+                        <div class="computer-selection-message"></div>
+                        <div class="result-message"></div>
+                    </div>
+                    <div class="console-item score-board-container">
+                        <h2 class="score-board-title">Score:</h2>
+                        <div class="score-board-items">
+                            <div class="score-board-item user-wins-text">
+                                <span class="user-wins-title">Wins:</span><span class="user-wins-score">0</span>
+                            </div>
+                            <div class="score-board-item user-losses-text">
+                                <span class="user-losses-title">Losses:</span><span class="user-losses-score">0</span>
+                            </div>
+                            <div class="score-board-item ties-text">
+                                <span class="ties-title">Ties:</span><span class="ties-score">0</span>
+                            </div>
+                        </div>
+                        <button class="reset-score-button">Reset Score</button>
+                    </div>
+                </div>
+                <div class="computer-options-container options-container">
+                    <h2 class="options-title">Computer</h2>
+                    <div class="options-buttons-container">
+                        <input type="image" src="./images/rock (reversed).png" name="computerRockButton" class="options-button rock-button" id="computerRockButton" disabled />
+                        <input type="image" src="./images/paper (reversed).png" name="computerPaperButton" class="options-button paper-button" id="computerPaperButton" disabled />
+                        <input type="image" src="./images/scissors (reversed).png" name="computercissorsButton" class="options-button scissors-button" id="computerScissorsButton" disabled />
+                    </div>
+                </div>
+            </div>
+            <img class="console-item versus-img" src="./images/versus-img.png" alt="User versus computer">
+        </div>
 
+        <div class="copyright">© Ethan Lewis 2025</div>
         <script src="./javascript.js"></script>
     </body>
 </html>
