@@ -43,7 +43,7 @@ function setRoundResultText(userSelection, computerSelection, roundResult) {
     let computerSelectionMessageDiv = document.querySelector(".computer-selection-message");
     let resultMessageDiv = document.querySelector(".result-message");
 
-    welcomeMessageDiv.textContent = "";
+    welcomeMessageDiv.style.display = "none";
     userSelectionMessageDiv.textContent = `You selected ${userSelection}.`;
     computerSelectionMessageDiv.textContent = `Computer selected ${computerSelection}.`;
     resultMessageDiv.textContent = `You ${roundResult}!`;
@@ -55,7 +55,7 @@ function resetRoundResultText() {
     let computerSelectionMessageDiv = document.querySelector(".computer-selection-message");
     let resultMessageDiv = document.querySelector(".result-message");
 
-    welcomeMessageDiv.textContent = "Welcome to a game of rock, paper, scissors! Make your selection!";
+    welcomeMessageDiv.style.display = "visible";
     userSelectionMessageDiv.textContent = "";
     computerSelectionMessageDiv.textContent = "";
     resultMessageDiv.textContent = "";

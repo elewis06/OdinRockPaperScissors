@@ -78,11 +78,13 @@ body {
 }
 
 .round-result-message-container {
+    height: 140px;
     padding: 0 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    justify-content: space-between;
+    /* gap: 5px; */
 }
 
 .round-result-message-container div {
@@ -93,12 +95,6 @@ body {
 
 .versus-img {
     width: 80px;
-    position: absolute;
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-
-    transform: translate(-50%, -50%); /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */
 }
 
 .score-board-container {
